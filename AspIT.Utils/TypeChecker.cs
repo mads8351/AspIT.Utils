@@ -18,6 +18,8 @@ namespace AspIT.Utils
         {
             if(type == null)
                 return false;
+            else if(type.GetType() == typeof(byte))
+                return true;
             else return false;
         }
     }
