@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils", "AspIT.Utils\AspIT.Utils.csproj", "{AEA315BC-B9FC-4D3E-A68F-D549ED32B4A7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5B5F48B3-A17D-4A1B-83E1-85E926B775DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils.Tests", "AspIT.Utils.Tests\AspIT.Utils.Tests.csproj", "{F3ABE294-0A00-46D3-98B6-53FF23D3658F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{AEA315BC-B9FC-4D3E-A68F-D549ED32B4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEA315BC-B9FC-4D3E-A68F-D549ED32B4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEA315BC-B9FC-4D3E-A68F-D549ED32B4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3ABE294-0A00-46D3-98B6-53FF23D3658F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3ABE294-0A00-46D3-98B6-53FF23D3658F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3ABE294-0A00-46D3-98B6-53FF23D3658F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3ABE294-0A00-46D3-98B6-53FF23D3658F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3ABE294-0A00-46D3-98B6-53FF23D3658F} = {5B5F48B3-A17D-4A1B-83E1-85E926B775DA}
 	EndGlobalSection
 EndGlobal
