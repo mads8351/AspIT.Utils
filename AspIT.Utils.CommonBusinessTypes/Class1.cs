@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AspIT.Utils.CommonBusinessTypes
 {
-    public class Class1
+    public abstract class Person
     {
     }
 }
