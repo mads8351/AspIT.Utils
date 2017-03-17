@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils", "AspIT.Utils\AspIT.Utils.csproj", "{AEA315BC-B9FC-4D3E-A68F-D549ED32B4A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils.CommonBusinessRules", "AspIT.Utils.CommonBusinessRules\AspIT.Utils.CommonBusinessRules.csproj", "{D7240C45-9E8A-43FE-8FFA-46444EA9B818}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C3D09033-7A10-46EB-81BC-C862FA96E37F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils.CommonBusinessRules.Tests", "AspIT.Utils.CommonBusinessRules.Tests\AspIT.Utils.CommonBusinessRules.Tests.csproj", "{2EAF876E-49C2-4F73-9056-3D231D82630F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,19 @@ Global
 		{AEA315BC-B9FC-4D3E-A68F-D549ED32B4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEA315BC-B9FC-4D3E-A68F-D549ED32B4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEA315BC-B9FC-4D3E-A68F-D549ED32B4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7240C45-9E8A-43FE-8FFA-46444EA9B818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7240C45-9E8A-43FE-8FFA-46444EA9B818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7240C45-9E8A-43FE-8FFA-46444EA9B818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7240C45-9E8A-43FE-8FFA-46444EA9B818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EAF876E-49C2-4F73-9056-3D231D82630F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAF876E-49C2-4F73-9056-3D231D82630F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAF876E-49C2-4F73-9056-3D231D82630F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAF876E-49C2-4F73-9056-3D231D82630F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EAF876E-49C2-4F73-9056-3D231D82630F} = {C3D09033-7A10-46EB-81BC-C862FA96E37F}
 	EndGlobalSection
 EndGlobal
