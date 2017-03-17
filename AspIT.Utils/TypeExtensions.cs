@@ -3,6 +3,10 @@
 using System;
 using System.Reflection;
 
+#if DEBUG
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("AspIT.Utils.Tests")]
+#endif
+
 namespace AspIT.Utils
 {
     /// <summary>
@@ -22,14 +26,21 @@ namespace AspIT.Utils
             type is ulong || type is long ||
             type is float || type is double || type is decimal ||
             type is System.Numerics.BigInteger || type is System.Numerics.Complex; //||
-            //!DefinesNumericOperators(type);
+                                                                                   //!DefinesNumericOperators(type);
 
+        /// <summary>
+        /// Indicates whether or not a declared type defines arithmetic, relation and equality operators by overloaded operators.
+        /// </summary>
+        /// <param name="valueType">The type of type <see cref="ValueType"/> to check.</param>
+        /// <returns>a <see cref="bool"/> indicating the result of the check.</returns>
         internal static bool DefinesNumericOperators(ValueType valueType)
         {
             bool isWellDefinedNumericType = false;
-            string[] operators = new string[] {"+", "-", "*", "/" };
+            string[] operators = new string[] { "+", "-", "*", "/", "<", "<=", ">", ">=", "==", "!=" };
+
+
+
             return isWellDefinedNumericType;
         }
-
     }
 }
