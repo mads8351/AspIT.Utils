@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils.Numerics", "Asp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils.CommonBusinessTypes", "AspIT.Utils.CommonBusinessTypes\AspIT.Utils.CommonBusinessTypes.csproj", "{B8E73062-9031-455A-B67E-FF286D8A222C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils.CommonBusinessRules", "AspIT.Utils.CommonBusinessRules\AspIT.Utils.CommonBusinessRules.csproj", "{D7240C45-9E8A-43FE-8FFA-46444EA9B818}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{B8E73062-9031-455A-B67E-FF286D8A222C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E73062-9031-455A-B67E-FF286D8A222C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E73062-9031-455A-B67E-FF286D8A222C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7240C45-9E8A-43FE-8FFA-46444EA9B818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7240C45-9E8A-43FE-8FFA-46444EA9B818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7240C45-9E8A-43FE-8FFA-46444EA9B818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7240C45-9E8A-43FE-8FFA-46444EA9B818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
