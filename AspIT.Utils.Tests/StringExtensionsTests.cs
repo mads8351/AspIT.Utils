@@ -24,12 +24,26 @@ namespace AspIT.Utils.Tests
         [TestMethod]
         public void NotStartsWithUppercasePass()
         {
-            // Arrange
+            // Arrange:
             string value = "mads";
             bool expected = false, actual;
 
             // Act:
             actual = value.StartsWithUppercase();
+
+            // Assert:
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void DoubleUShortParameterPasses()
+        {
+            // Arrange:
+            uint expected = ushort.MaxValue * 2;
+            uint actual;
+
+            // Act:
+            actual = 345345;
 
             // Assert:
             Assert.AreEqual(expected, actual);

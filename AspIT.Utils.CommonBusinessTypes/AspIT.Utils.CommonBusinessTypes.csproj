@@ -43,6 +43,12 @@
     <Compile Include="UserCredentials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AspIT.Utils\AspIT.Utils.csproj">
+      <Project>{aea315bc-b9fc-4d3e-a68f-d549ed32b4a7}</Project>
+      <Name>AspIT.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
