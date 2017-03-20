@@ -46,7 +46,9 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -54,8 +56,13 @@
     <Compile Include="StringExtensionsTests.cs" />
     <Compile Include="TypeExtensionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserCredentialsTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AspIT.Utils.CommonBusinessTypes\AspIT.Utils.CommonBusinessTypes.csproj">
+      <Project>{b8e73062-9031-455a-b67e-ff286d8a222c}</Project>
+      <Name>AspIT.Utils.CommonBusinessTypes</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AspIT.Utils\AspIT.Utils.csproj">
       <Project>{aea315bc-b9fc-4d3e-a68f-d549ed32b4a7}</Project>
       <Name>AspIT.Utils</Name>
