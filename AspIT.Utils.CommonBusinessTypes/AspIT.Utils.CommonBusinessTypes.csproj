@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommissionEmployee.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="HourlyEmployee.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="UserCredentials.cs" />

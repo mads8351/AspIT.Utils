@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 namespace AspIT.Utils.CommonBusinessTypes
 {
   /// <summary>
-  /// Class derived from <see cref="Person"/> representing a employee.
+  /// Class derived from <see cref="Person"/> representing an monthly payed employee.
   /// </summary>
   public class Employee : Person
   {
-    private string monthlyIncome;
+    protected double monthlyIncome;
 
     /// <summary>
     /// Initializes a new instances of <see cref="Employee"/>.
     /// </summary>
     /// <param name="monthlyIncome">The monthlyincome of the <see cref="Employee"/>.</param>
-    /// <param name="firstName">The <see cref="Employee"/> firstname.</param>
-    /// <param name="lastName">The <see cref="Employee"/> lastname.</param>
-    public Employee(string monthlyIncome, string firstName, string lastName) : base(firstName, lastName)
+    /// <param name="firstName">The <see cref="Employee"/> FirstName.</param>
+    /// <param name="lastName">The <see cref="Employee"/> LastnNme.</param>
+    public Employee(double monthlyIncome, string firstName, string lastName) : base(firstName, lastName)
     {
       MonthlyIncome = monthlyIncome;
     }
@@ -27,7 +27,7 @@ namespace AspIT.Utils.CommonBusinessTypes
     /// <summary>
     /// Gets or Sets the <see cref="Employee"/> monthlyincome.
     /// </summary>
-    public string MonthlyIncome
+    public virtual double MonthlyIncome
     {
       get
       {

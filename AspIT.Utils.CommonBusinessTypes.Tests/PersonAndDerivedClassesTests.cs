@@ -82,5 +82,24 @@ namespace AspIT.Utils.CommonBusinessTypes.Tests
       Assert.AreEqual(expectedToString3, actualToString3);
       Assert.AreEqual(expectedToString4, actualToString4);
     }
+    [TestMethod]
+    public void EmployeeDerivedClassesTest()
+    {
+      // Arrange:
+      CommissionEmployee c1 = new CommissionEmployee(5,10000,50000,"mads","lol");
+      HourlyEmployee h1 = new HourlyEmployee(300,200,"mads","sam");
+      double expectedMonthlyIncomec1 = 50500;
+      double expectedMonthlyIncomeh1 = 60000;
+      double actualMonthlyIncomec1;
+      double actualMonthlyIncomeh1;
+
+      // Act:
+      actualMonthlyIncomec1 = c1.MonthlyIncome;
+      actualMonthlyIncomeh1 = h1.MonthlyIncome;
+
+      // Assert:
+      Assert.AreEqual(expectedMonthlyIncomec1, actualMonthlyIncomec1);
+      Assert.AreEqual(expectedMonthlyIncomeh1, actualMonthlyIncomeh1);
+    }
   }
 }
