@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
 using AspIT.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -61,6 +62,21 @@ namespace AspIT.Utils.Tests
 
             // Assert:
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void DefinesNumericOperators()
+        {
+            // Arrange:
+            BigInteger big = 0;
+            bool expected = true;
+            bool actual;
+
+            // Act:
+            actual = TypeExtensions.DefinesNumericOperators(big);
+
+            // Assert:
+            Assert.AreEqual(expected,actual);
         }
     }
 }

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="28d79728-453b-4770-9a36-18faac4240a1" name="RelationalDbPersistency" linkedPackageId="b63b562b-3264-46a6-9ac4-132995f2f1fb" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c062dab0-8d95-40a5-83a3-b6e7f9dae9f6">
+      <profileInstance Id="0a25b3f3-0b71-4fdb-b78d-2b614a9b9daa" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6a0530a5-0e5c-4903-8cd6-b83f5240d1d9">
+      <profileInstance Id="8d375376-2ad1-4411-bb61-368a0d506edd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e6683b77-ed6e-492b-a859-bf09abfdddfb" name="QueryExecutor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d842778c-27cc-45e8-8974-1b67ab2995b6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b24d1b6-36f3-40d3-9ac7-ac8c79917293" name="SqlDbQueryExecutor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99fb0921-d5c8-41c7-904f-14a944ab5dcf" />
+        <generalsInternal>
+          <generalization Id="1595bf7f-3206-4a54-924f-e9c29e0db339" isSubstitutable="false">
+            <classMoniker Id="e6683b77-ed6e-492b-a859-bf09abfdddfb" LastKnownName="QueryExecutor" />
+            <elementDefinition Id="f75a9bf5-bdba-4f61-a43a-0d2ac1416dc5" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="265c16f1-7a88-48cc-bd46-b9c7fa950073" name="DmlSqlDbQueryExecutor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5578dad7-d4c1-49ba-8af8-914f3df9c7d0" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b13b4678-f123-4ef0-9d6f-bf8b6dbf7c2e" name="DdlSqlQueryExecutor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="57a3d517-f5ce-4358-bfd3-3537c64c43ba" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b63b562b-3264-46a6-9ac4-132995f2f1fb" name="AspIT.Utils.Models.Persistence">
+    <elementDefinition Id="ce4a6115-d039-4379-86b2-8a2b0696d39e" />
+  </package>
+</logicalClassDesignerModel>
