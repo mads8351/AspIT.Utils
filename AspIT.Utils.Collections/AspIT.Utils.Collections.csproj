@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{874A98B8-3365-453F-AA60-858FD35CE29D}</ProjectGuid>
+    <ProjectGuid>{41099DBA-16CA-4316-9E8A-C98855D31B32}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AspIT.Utils.Numerics</RootNamespace>
-    <AssemblyName>AspIT.Utils.Numerics</AssemblyName>
+    <RootNamespace>AspIT.Utils.Collections</RootNamespace>
+    <AssemblyName>AspIT.Utils.Collections</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MathExtension.cs" />
+    <Compile Include="TestDictionary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

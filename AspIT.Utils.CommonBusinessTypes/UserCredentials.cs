@@ -58,7 +58,7 @@ namespace AspIT.Utils.CommonBusinessTypes
     /// <summary>
     /// Gets a string of the user informating.
     /// </summary>
-    /// <returns>Returns a string with the user informatin</returns>
+    /// <returns>Returns a string with the user informatin.</returns>
     public override string ToString()
     {
       return $"Username: {username} Password: {password}";
@@ -68,7 +68,7 @@ namespace AspIT.Utils.CommonBusinessTypes
     /// Determines weather the specified <see cref="UserCredentials"/> is equal to this <see cref="UserCredentials"/>.
     /// </summary>
     /// <param name="other">The specified <see cref="UserCredentials"/> to compare with.</param>
-    /// <returns>Returns a <see cref="bool"/> indicating weather the two <see cref="UserCredentials"/> is equal</returns>
+    /// <returns>Returns a <see cref="bool"/> indicating weather the two <see cref="UserCredentials"/> is equal.</returns>
     public bool Equals(UserCredentials other)
     {
       return username == other.username && password == other.password;
