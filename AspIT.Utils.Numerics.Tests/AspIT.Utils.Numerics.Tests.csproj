@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2EAF876E-49C2-4F73-9056-3D231D82630F}</ProjectGuid>
+    <ProjectGuid>{3E22F973-DC5C-46C8-A597-D607B4AAC56F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AspIT.Utils.CommonBusinessRules.Tests</RootNamespace>
-    <AssemblyName>AspIT.Utils.CommonBusinessRules.Tests</AssemblyName>
+    <RootNamespace>AspIT.Utils.Numerics.Tests</RootNamespace>
+    <AssemblyName>AspIT.Utils.Numerics.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,14 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="NameCheckerTests.cs" />
+    <Compile Include="MathExtensionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ZipCodeCheckerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AspIT.Utils.CommonBusinessRules\AspIT.Utils.CommonBusinessRules.csproj">
-      <Project>{d7240c45-9e8a-43fe-8ffa-46444ea9b818}</Project>
-      <Name>AspIT.Utils.CommonBusinessRules</Name>
+    <ProjectReference Include="..\AspIT.Utils.Numerics\AspIT.Utils.Numerics.csproj">
+      <Project>{874a98b8-3365-453f-aa60-858fd35ce29d}</Project>
+      <Name>AspIT.Utils.Numerics</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
