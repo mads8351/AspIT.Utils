@@ -39,5 +39,22 @@ namespace AspIT.Utils.CommonBusinessRules.Tests
             // Assert: 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void IsLowercaseValidNamePass()
+        {
+            // Arrange: 
+            string s = "von";
+            string s1 = "di";
+            string s2 = "la";
+            bool expected = true;
+            bool actual;
+
+            // Act: 
+            actual = NameChecker.IsValidName(s) && NameChecker.IsValidName(s1) && NameChecker.IsValidName(s2);
+
+            // Assert: 
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
