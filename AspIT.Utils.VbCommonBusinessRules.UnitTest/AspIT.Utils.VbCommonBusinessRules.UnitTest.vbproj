@@ -117,6 +117,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AspIT.Utils.Collections\AspIT.Utils.Collections.csproj">
+      <Project>{41099dba-16ca-4316-9e8a-c98855d31b32}</Project>
+      <Name>AspIT.Utils.Collections</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AspIT.Utils.VbCommonBusinessRules\AspIT.Utils.VbCommonBusinessRules.vbproj">
       <Project>{e8183176-5b6d-4479-a2a3-1526c987b87f}</Project>
       <Name>AspIT.Utils.VbCommonBusinessRules</Name>
