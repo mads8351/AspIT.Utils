@@ -28,7 +28,7 @@ namespace AspIT.Utils
             type is float || type is double || type is decimal ||
             type is System.Numerics.BigInteger ||
             type is System.Numerics.Complex ||
-            !DefinesNumericOperators(type);
+            DefinesNumericOperators(type);
 
         /// <summary>
         /// Indicates whether or not a declared type defines arithmetic, relation and equality operators by overloaded operators.

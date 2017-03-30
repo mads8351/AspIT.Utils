@@ -76,7 +76,7 @@ namespace AspIT.Utils.Tests
             actual = TypeExtensions.DefinesNumericOperators(big);
 
             // Assert:
-            Assert.AreEqual(expected,actual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
