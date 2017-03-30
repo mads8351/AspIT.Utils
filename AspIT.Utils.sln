@@ -25,6 +25,8 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "AspIT.Utils.Models.Persiste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils.Collections", "AspIT.Utils.Collections\AspIT.Utils.Collections.csproj", "{41099DBA-16CA-4316-9E8A-C98855D31B32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspIT.Utils.Collections.Tests", "AspIT.Utils.Collections.Tests\AspIT.Utils.Collections.Tests.csproj", "{C71285E9-0F39-41D5-BF00-5356F9708826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{41099DBA-16CA-4316-9E8A-C98855D31B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41099DBA-16CA-4316-9E8A-C98855D31B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41099DBA-16CA-4316-9E8A-C98855D31B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71285E9-0F39-41D5-BF00-5356F9708826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71285E9-0F39-41D5-BF00-5356F9708826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71285E9-0F39-41D5-BF00-5356F9708826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71285E9-0F39-41D5-BF00-5356F9708826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +81,6 @@ Global
 		{F3ABE294-0A00-46D3-98B6-53FF23D3658F} = {5B5F48B3-A17D-4A1B-83E1-85E926B775DA}
 		{2EAF876E-49C2-4F73-9056-3D231D82630F} = {5B5F48B3-A17D-4A1B-83E1-85E926B775DA}
 		{BF868638-7522-41B3-B45F-E2EA953182F6} = {C255CDB3-0BD7-4354-AB60-ECE21A28C6BB}
+		{C71285E9-0F39-41D5-BF00-5356F9708826} = {5B5F48B3-A17D-4A1B-83E1-85E926B775DA}
 	EndGlobalSection
 EndGlobal
