@@ -6,7 +6,7 @@ Imports System.IO
 <TestClass()> Public Class VBNameCheckerTests
 
   <TestMethod()> Public Sub ValidNamesPasses()
-    Dim testValues As List(Of String) = New List(Of String)
+    Dim testssValues As List(Of String) = New List(Of String)
     Dim reader As StreamReader = New StreamReader("C:\SourceCodes\Textfiles\Names.txt")
     Dim line As String = Nothing
     While ((line = reader.ReadLine))
