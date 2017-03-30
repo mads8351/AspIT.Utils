@@ -11,8 +11,8 @@ namespace AspIT.Utils.Tests
     public void IsTwoUserCredentialsEqualTest()
     {
       // Arrange:
-      UserCredentials u1 = new UserCredentials("Username","Password");
-      UserCredentials u2 = new UserCredentials("Username","Password");
+      UserCredentials u1 = new UserCredentials("Username", "Password");
+      UserCredentials u2 = new UserCredentials("Username", "Password");
       bool actual;
       bool expected = true;
 
