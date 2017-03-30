@@ -138,7 +138,7 @@ namespace AspIT.Utils.Collections
         /// <summary>
         /// Gets the key element at the specified index.
         /// </summary>
-        /// <param name="index">The index og the key.</param>
+        /// <param name="index">The index of the key.</param>
         /// <returns>The key at the index</returns>
         public virtual TKey GetTestValueAt(int index)
         {
