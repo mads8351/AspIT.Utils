@@ -6,12 +6,28 @@ namespace AspIT.Utils.Collections
 {
     /// <summary>
     /// A dictionary specialized for unit testing. Inherits <see cref="OrderedDictionary"/>.
-    /// Provided an interface for testing purposes.
+    /// Is immutable.
     /// </summary>
     /// <typeparam name="TKey">The type of test values.</typeparam>
-    /// <typeparam name="TValue">The type of result of the testing of the test value.</typeparam>
-    public class TestDictionary<TKey, TValue> : OrderedDictionary
+    /// <typeparam name="TValue">The type of result of the testing of the test value. 
+    /// Must be a value type.</typeparam>
+    public class TestDictionary<TKey, TValue> : OrderedDictionary where TValue : struct
     {
+
+        #region Fields
+        /// <summary>
+        /// Contains all test values that did not pass a test, along with their index in this 
+        /// <see cref="TestDictionary{TKey, TValue}"/>.
+        /// </summary>
+        protected OrderedDictionary failedTestValues;
+
+        /// <summary>
+        /// Indicates whether function members on this instance was invoked
+        /// </summary>
+        protected bool testWasRun;
+        #endregion
+
+
         #region Constructors
         /// <summary>
         /// Initializes a new instance of this type with the provided collection of test values and
@@ -81,6 +97,7 @@ namespace AspIT.Utils.Collections
                 base.Add(testValues[i], testResults[i]);
                 i++;
             }
+
         }
 
         /// <summary>
@@ -99,15 +116,65 @@ namespace AspIT.Utils.Collections
         {
             return $"Count: {base.Count.ToString()}";
         }
+
+        /// <summary>
+        /// Determines if all test result are the same. Uses value equality.
+        /// </summary>
+        /// <param name="expectedTestResult">The expected test result value.</param>
+        /// <returns>A <see cref="bool"/> indicating whether or not all test result values are 
+        /// equal.</returns>
+        public virtual bool AllTestResultsAreSame(TValue expectedTestResult)
+        {
+            foreach (TValue testResult in base.Values)
+            {
+                if (!testResult.Equals(expectedTestResult))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Gets the key element at the specified index.
+        /// </summary>
+        /// <param name="index">The index of the key.</param>
+        /// <returns>The key at the index</returns>
+        public virtual TKey GetTestValueAt(int index)
+        {
+            TKey[] keyArray = new TKey[base.Keys.Count];
+            Keys.CopyTo(keyArray, 0);
+            return keyArray[index];
+        }
+        #endregion
+
+
+        #region Properties
+        /// <summary>
+        /// Gets a <see cref="OrderedDictionary"/> containing all failed test values, with their
+        /// corresponding key index in this <see cref="TestDictionary{TKey, TValue}"/>.
+        /// </summary>
+        public virtual OrderedDictionary FailedTestValues
+        {
+            get
+            {
+                if (testWasRun)
+                {
+                    return failedTestValues;
+                }
+                else return default(OrderedDictionary);
+            }
+        }
         #endregion
 
 
         #region Indexers
         /// <summary>
-        /// 
+        /// Gets or sets the <see cref="TValue"/> to or from the provided index.
         /// </summary>
-        /// <param name="index"></param>
-        /// <returns></returns>
+        /// <param name="index">The index in <see cref="OrderedDictionary.Values"/>.</param>
+        /// <returns>The <see cref="TValue"/> at the specified index.</returns>
+        /// <exception cref="IndexOutOfRangeException"/>
         public new virtual TValue this[int index]
         {
             get
